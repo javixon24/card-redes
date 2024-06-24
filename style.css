@@ -1,0 +1,124 @@
+/* Estilo general */
+body {
+    background-color: #000000d8;
+    color: #f7f7f7;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    margin: 0;
+    /* Elimina el margen por defecto del body */
+    padding: 10;
+    /* Elimina el padding por defecto del body */
+}
+
+/* Contenedor principal */
+.contenedor-principal {
+    width: 90%;
+    /* Ajusta el ancho a 90% para mayor flexibilidad */
+    max-width: 400px;
+    /* Ancho máximo para limitar el tamaño en pantallas grandes */
+    margin: 20px auto;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 9px 14px rgba(236, 236, 236, 0.2);
+    background-color: #1d1c17d8;
+}
+
+/* Sección de información */
+.seccion-informacion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.seccion-informacion img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-right: 20px;
+    border: 3px solid #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.contenido-texto {
+    text-align: center;
+}
+
+.contenido-texto h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.contenido-texto p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #1dd123;
+}
+
+/* Sección de redes sociales */
+.seccion-redes-sociales {
+    display: flex;
+    flex-direction: column;
+    /* Mantén la disposición en columna por defecto */
+    align-items: center;
+}
+
+.seccion-redes-sociales ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.seccion-redes-sociales li {
+    margin-bottom: 15px;
+}
+
+.seccion-redes-sociales a {
+    text-decoration: none;
+    color: #f3f0f0;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #515064;
+    transition: background-color 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 150px;
+}
+
+.seccion-redes-sociales a:hover {
+    background-color: #02f30a;
+}
+
+/* Media Queries para dispositivos móviles */
+@media (max-width: 768px) {
+
+    /* Ajustar el tamaño de la fuente */
+    .contenido-texto h2 {
+        font-size: 20px;
+    }
+
+    .contenido-texto p {
+        font-size: 14px;
+    }
+
+    /* Aumentar el espaciado entre elementos */
+    .seccion-informacion img {
+        margin-right: 10px;
+        /* Reduce el espacio entre imagen y texto */
+    }
+
+    .contenido-texto {
+        margin-bottom: 15px;
+        /* Aumenta el espacio entre texto e imagen */
+    }
+}
+
+@media (max-width: 480px) 
+{ /* Reducir el tamaño de la imagen */
+    .seccion-informacion img {
+        width: 130px;
+        height: 130px;
+    }
+}
